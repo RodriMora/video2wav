@@ -15,7 +15,7 @@ def extract_audio_from_video(video_file_path, output_audio_path):
         # Extract the audio
         audio = video.audio
 
-        # Write the audio to a file
+        # Write the audio to a file in wav
         audio.write_audiofile(output_audio_path, codec='pcm_s16le')
 
         print(f"Audio extracted and saved to {output_audio_path}")
